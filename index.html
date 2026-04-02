@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DiKeVoi! – Split your campus ride costs fairly. The smart way for VNU-HCM students to share rides and split transportation fees." />
+  <title>DiKeVoi! – Share Rides, Split Costs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-icon">🛵</span>
+        <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
+      </a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#download" class="btn btn--sm">Get the App</a></li>
+        </ul>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">🎓 For VNU-HCM Students</p>
+        <h1 class="hero__title">Split Campus Rides,<br /><span class="accent">Not Friendships</span></h1>
+        <p class="hero__subtitle">
+          DiKeVoi! makes it effortless to share rides with fellow students on the VNU-HCM campus and split the transportation costs — fairly, transparently, and instantly.
+        </p>
+        <div class="hero__cta">
+          <a href="#download" class="btn btn--primary">Download Now</a>
+          <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
+        </div>
+        <div class="hero__badges">
+          <span class="badge">📱 iOS &amp; Android</span>
+          <span class="badge">⚡ Real-time Splitting</span>
+          <span class="badge">🔒 Secure</span>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="phone-mockup">
+          <div class="phone-mockup__screen">
+            <div class="mock-screen">
+              <div class="mock-header">
+                <div class="mock-avatar">👤</div>
+                <div>
+                  <div class="mock-name">Nguyen Van A</div>
+                  <div class="mock-sub">Heading to Library Gate</div>
+                </div>
+                <div class="mock-tag">Driver</div>
+              </div>
+              <div class="mock-route">
+                <div class="mock-route__point mock-route__point--start">
+                  <span class="dot dot--green"></span>
+                  Ký túc xá Khu A
+                </div>
+                <div class="mock-route__line"></div>
+                <div class="mock-route__point">
+                  <span class="dot dot--red"></span>
+                  Cổng Thư viện Trung tâm
+                </div>
+              </div>
+              <div class="mock-riders">
+                <div class="mock-rider">
+                  <span>🧑 Tran Thi B</span>
+                  <span class="mock-cost">5,000 ₫</span>
+                </div>
+                <div class="mock-rider">
+                  <span>👩 Le Van C</span>
+                  <span class="mock-cost">5,000 ₫</span>
+                </div>
+              </div>
+              <div class="mock-total">
+                <span>Total Trip</span>
+                <span class="mock-total__amount">15,000 ₫</span>
+              </div>
+              <button class="mock-btn">Confirm &amp; Split</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__number">100%</div>
+        <div class="stat__label">Fair Cost Splitting</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">VNU-HCM</div>
+        <div class="stat__label">Campus Focused</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">⚡ Fast</div>
+        <div class="stat__label">Instant Bill Generation</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">0₫</div>
+        <div class="stat__label">Service Fee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Why DiKeVoi!</p>
+        <h2>Everything you need to ride together</h2>
+        <p class="section-desc">No more awkward conversations about money. DiKeVoi! handles the math so you can focus on the journey.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">🗺️</div>
+          <h3>Smart Route Matching</h3>
+          <p>Find students heading the same direction within the VNU-HCM campus in seconds. Enter your destination and let DiKeVoi! do the rest.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🧮</div>
+          <h3>Automatic Cost Splitting</h3>
+          <p>Costs are divided equally among all riders automatically. No calculators needed — just agree and go.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📲</div>
+          <h3>Instant Notifications</h3>
+          <p>Get notified when a ride match is found, when the driver confirms, and when your share is due.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🏫</div>
+          <h3>Campus-Only Network</h3>
+          <p>Exclusively for VNU-HCM students. Verified student accounts keep the community trustworthy and safe.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">💳</div>
+          <h3>Ride History</h3>
+          <p>Track every shared ride, who you rode with, and how much was split. Keep your finances organised effortlessly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🌙</div>
+          <h3>Light &amp; Dark Mode</h3>
+          <p>Comfortable on the eyes day or night. DiKeVoi! adapts to your system theme automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Simple Steps</p>
+        <h2>How DiKeVoi! Works</h2>
+        <p class="section-desc">Get from A to B with friends and split the cost in three simple steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <div class="step__content">
+            <h3>Post or Find a Ride</h3>
+            <p>Enter your pickup and drop-off location on campus. Choose to offer a ride or search for an existing one going your way.</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div class="step__content">
+            <h3>Match &amp; Confirm</h3>
+            <p>DiKeVoi! matches you with students travelling the same route. Accept the match, confirm your seat, and you're good to go.</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div class="step__content">
+            <h3>Ride &amp; Split</h3>
+            <p>Enjoy the ride! When you arrive, the app automatically calculates each person's fair share of the total fare.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download" id="download">
+    <div class="container download__inner">
+      <div class="download__content">
+        <p class="eyebrow eyebrow--light">Get Started Today</p>
+        <h2>Download DiKeVoi!</h2>
+        <p>Available on iOS and Android. Scan the QR code or tap the button below to get the app — completely free for all VNU-HCM students.</p>
+        <div class="download__buttons">
+          <a href="#" class="btn btn--white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+          <a href="#" class="btn btn--white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.22.97.14l12.4-7.15-2.55-2.55-10.82 9.56zm-1.7-21.3A2 2 0 0 0 1 3.84v16.32c0 .57.24 1.1.64 1.47l.08.08 9.14-9.15v-.22L1.48 2.46zm18.54 8.63l-2.61-1.51-2.87 2.87 2.87 2.87 2.63-1.52a2 2 0 0 0 0-3.71zM4.15.24L16.55 7.4l-2.55 2.55L3.18.39C3.5.31 3.84.07 4.15.24z"/></svg>
+            Google Play
+          </a>
+        </div>
+        <p class="download__coming-soon">🚀 Coming soon — stay tuned!</p>
+      </div>
+      <div class="download__qr">
+        <div class="qr-placeholder">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <!-- QR code pattern (decorative) -->
+            <rect x="5" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
+            <rect x="13" y="13" width="19" height="19" rx="1"/>
+            <rect x="60" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
+            <rect x="68" y="13" width="19" height="19" rx="1"/>
+            <rect x="5" y="60" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
+            <rect x="13" y="68" width="19" height="19" rx="1"/>
+            <rect x="60" y="60" width="7" height="7" rx="1"/>
+            <rect x="72" y="60" width="7" height="7" rx="1"/>
+            <rect x="84" y="60" width="11" height="7" rx="1"/>
+            <rect x="60" y="72" width="11" height="7" rx="1"/>
+            <rect x="76" y="72" width="7" height="7" rx="1"/>
+            <rect x="84" y="72" width="11" height="7" rx="1"/>
+            <rect x="60" y="84" width="7" height="11" rx="1"/>
+            <rect x="72" y="84" width="23" height="11" rx="1"/>
+            <rect x="44" y="5" width="7" height="7" rx="1"/>
+            <rect x="44" y="17" width="7" height="7" rx="1"/>
+            <rect x="44" y="29" width="7" height="7" rx="1"/>
+            <rect x="44" y="44" width="7" height="51" rx="1"/>
+            <rect x="5" y="44" width="35" height="7" rx="1"/>
+          </svg>
+          <p>Scan to Download</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">The Builders</p>
+        <h2>Meet the Team</h2>
+        <p class="section-desc">DiKeVoi! is proudly built by Group L02-4795 as part of the Mobile App Development course at VNU-HCM, Semester 252.</p>
+      </div>
+      <div class="team__info-cards">
+        <div class="info-card">
+          <div class="info-card__icon">🎓</div>
+          <div class="info-card__label">Course</div>
+          <div class="info-card__value">Mobile App Development</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">👥</div>
+          <div class="info-card__label">Group</div>
+          <div class="info-card__value">L02-4795</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">🏛️</div>
+          <div class="info-card__label">University</div>
+          <div class="info-card__value">VNU-HCM</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">📅</div>
+          <div class="info-card__label">Semester</div>
+          <div class="info-card__value">252</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-icon">🛵</span>
+        <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
+      </div>
+      <p class="footer__tagline">Ride together. Save together.</p>
+      <div class="footer__links">
+        <a href="https://github.com/DiKeVoi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#features">Features</a>
+        <a href="#team">Team</a>
+      </div>
+      <p class="footer__copy">© 2025 DiKeVoi! — Group L02-4795 · VNU-HCM</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav__links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav__links--open');
+      hamburger.classList.toggle('nav__hamburger--open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav__links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav__links--open');
+        hamburger.classList.remove('nav__hamburger--open');
+      });
+    });
+
+    // Sticky nav shadow on scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+    });
+
+    // Animate elements on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .step, .stat, .info-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
