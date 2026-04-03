@@ -52,6 +52,16 @@ a {
   text-decoration: none;
 }
 
+.logo-icon {
+  display: inline-block; 
+  width: 32px; 
+  height: 32px;
+  background-image: url('images/logo.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
 img { max-width: 100%; display: block; }
 
 .container {
@@ -277,7 +287,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-sm);
 }
 
-/* Phone mockup */
+/* === PHONE MOCKUP === */
 .hero__visual {
   position: relative;
   display: flex;
@@ -310,141 +320,10 @@ img { max-width: 100%; display: block; }
   background: var(--white);
   border-radius: 28px;
   overflow: hidden;
+  position: relative;
+  height: 520px; /* Thêm chiều cao cố định để màn hình App có thể scroll được */
 }
 
-.mock-screen {
-  padding: 20px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  background: linear-gradient(180deg, #f0fdf4 0%, #fff 40%);
-}
-
-.mock-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.mock-avatar {
-  width: 36px;
-  height: 36px;
-  background: #FFFAE5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.mock-name {
-  font-size: .8rem;
-  font-weight: 700;
-  color: var(--gray-900);
-}
-
-.mock-sub {
-  font-size: .7rem;
-  color: var(--gray-400);
-}
-
-.mock-tag {
-  margin-left: auto;
-  background: #FFFAE5;
-  color: #152249;
-  font-size: .65rem;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 50px;
-}
-
-.mock-route {
-  background: var(--gray-50);
-  border-radius: 10px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.mock-route__point {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: .72rem;
-  color: var(--gray-800);
-  font-weight: 500;
-}
-
-.mock-route__line {
-  width: 2px;
-  height: 12px;
-  background: var(--gray-200);
-  margin-left: 5px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.dot--green { background: #E8D73F; }
-.dot--red   { background: #ef4444; }
-
-.mock-riders {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.mock-rider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: .73rem;
-  color: var(--gray-700);
-  background: var(--gray-50);
-  padding: 7px 10px;
-  border-radius: 8px;
-}
-
-.mock-cost {
-  font-weight: 700;
-  color: #F9F871;
-}
-
-.mock-total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 0;
-  border-top: 1px solid var(--gray-200);
-  font-size: .75rem;
-  color: var(--gray-600);
-}
-
-.mock-total__amount {
-  font-size: .9rem;
-  font-weight: 800;
-  color: var(--gray-900);
-}
-
-.mock-btn {
-  background: var(--green);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: .8rem;
-  font-weight: 700;
-  cursor: pointer;
-  width: 100%;
-  transition: background var(--transition);
-}
-
-.mock-btn:hover { background: var(--green-dark); }
 
 /* === STATS === */
 .stats {
@@ -716,6 +595,15 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 
+.footer__brand .logo-icon {
+  background-color: var(--white); 
+  border-radius: 50%; 
+  padding: 4px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
+}
 .footer__inner {
   display: flex;
   flex-direction: column;

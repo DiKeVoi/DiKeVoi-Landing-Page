@@ -1,211 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DiKeVoi! – Split your campus ride costs fairly. The smart way for VNU-HCM students to share rides and split transportation fees." />
-  <title>DiKeVoi! – Share Rides, Split Costs</title>
+  <meta name="description" content="DiKeVoi! – Ứng dụng ghép cặp sinh viên (có xe và cần đi ké) cùng tuyến đường trong Làng đại học. Cùng trường, cùng đường, cùng đi!" />
+  <title>DiKeVoi! – Cùng trường, cùng đường, cùng đi!</title>
+  
   <link rel="stylesheet" href="styles.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+        corePlugins: {
+            preflight: false, // RẤT QUAN TRỌNG: Ngăn Tailwind reset CSS toàn trang
+        },
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#152249",
+                    "accent": "#F9F871",
+                    "background-light": "#f8f6f6",
+                    "navy-custom": "#152249",
+                    "yellow-accent": "#F9F871"
+                },
+                fontFamily: {
+                    "display": ["Public Sans", "sans-serif"]
+                }
+            },
+        },
+    }
+  </script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
       <a href="#" class="nav__logo">
-        <span class="logo-icon">🛵</span>
-        <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
+        <span class="logo-icon">
+        </span>
+        <span class="logo-text">DiKeVoi!</span>
       </a>
       <nav>
         <ul class="nav__links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#download" class="btn btn--sm">Get the App</a></li>
+          <li><a href="#features">Tính năng</a></li>
+          <li><a href="#how-it-works">Cách hoạt động</a></li>
+          <li><a href="#team">Đội ngũ</a></li>
+          <li><a href="#download" class="btn btn--sm">Tải ứng dụng</a></li>
         </ul>
       </nav>
-      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <button class="nav__hamburger" id="hamburger" aria-label="Mở menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">🎓 For VNU-HCM Students</p>
-        <h1 class="hero__title">Split Campus Rides,<br /><span class="accent">Not Friendships</span></h1>
+        <p class="hero__eyebrow">Dành cho sinh viên Làng Đại học!</p>
+        <h1 class="hero__title">Cùng trường, cùng đường, cùng đi!</span></h1>
         <p class="hero__subtitle">
-          DiKeVoi! makes it effortless to share rides with fellow students on the VNU-HCM campus and split the transportation costs — fairly, transparently, and instantly.
-        </p>
+            DiKeVoi! là ứng dụng phi lợi nhuận giúp kết nối các bạn sinh viên có xe và những bạn cần đi ké trên cùng tuyến đường quanh Làng Đại học. Lên xe vi vu cùng nhau, chi phí hỗ trợ xăng xe hoàn toàn do hai bên tự do thỏa thuận hoặc thậm chí là chở nhau miễn phí!        </p>
         <div class="hero__cta">
-          <a href="#download" class="btn btn--primary">Download Now</a>
-          <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
+          <a href="#download" class="btn btn--primary">Tải Xuống Ngay</a>
+          <a href="#how-it-works" class="btn btn--outline">Tìm hiểu cách hoạt động</a>
         </div>
         <div class="hero__badges">
-          <span class="badge">📱 iOS &amp; Android</span>
-          <span class="badge">⚡ Real-time Splitting</span>
-          <span class="badge">🔒 Secure</span>
+          <span class="badge">Ứng dụng iOS &amp; Android</span>
+          <span class="badge">Đón tận nơi trong KTX</span>
+          <span class="badge">Cộng đồng sinh viên an toàn</span>
         </div>
       </div>
+      
       <div class="hero__visual">
         <div class="phone-mockup">
           <div class="phone-mockup__screen">
-            <div class="mock-screen">
-              <div class="mock-header">
-                <div class="mock-avatar">👤</div>
-                <div>
-                  <div class="mock-name">Nguyen Van A</div>
-                  <div class="mock-sub">Heading to Library Gate</div>
-                </div>
-                <div class="mock-tag">Driver</div>
+            
+            <div class="relative flex h-full w-full flex-col bg-slate-50 overflow-hidden font-display" style="font-family: 'Public Sans', sans-serif;">
+              
+              <div class="flex items-center p-3 justify-between bg-white shrink-0 shadow-sm z-10">
+                <span class="material-symbols-outlined text-[16px] text-navy-custom cursor-pointer">arrow_back</span>
+                <h2 class="text-navy-custom text-[14px] font-bold flex-1 text-center pr-4">Đi ké với</h2>
               </div>
-              <div class="mock-route">
-                <div class="mock-route__point mock-route__point--start">
-                  <span class="dot dot--green"></span>
-                  Ký túc xá Khu A
+              
+              <div class="flex-1 overflow-y-auto no-scrollbar pb-20">
+                <div class="px-3 pt-3 pb-1">
+                  <p class="text-navy-custom text-[12px] font-bold">3 bạn đồng hành phù hợp</p>
                 </div>
-                <div class="mock-route__line"></div>
-                <div class="mock-route__point">
-                  <span class="dot dot--red"></span>
-                  Cổng Thư viện Trung tâm
+                
+                <div class="flex flex-col gap-2 p-3 pt-1">
+                  
+                  <div class="rounded-xl border border-slate-100 bg-white p-2.5 shadow-sm flex flex-col gap-2 relative">
+                    <div class="flex justify-between items-start">
+                      <div class="flex gap-2">
+                        <img class="w-8 h-8 rounded-full object-cover bg-slate-200" src="https://i.pravatar.cc/150?img=11" alt="Avatar"/>
+                        <div class="flex flex-col justify-center">
+                          <p class="text-navy-custom text-[12px] font-bold leading-tight">Nguyễn Văn An</p>
+                          <div class="flex gap-1 mt-1">
+                            <span class="bg-navy-custom text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Cho đi ké</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-right">
+                        <p class="text-navy-custom font-bold text-[8px]">10/10/2026</p>
+                        <p class="text-navy-custom text-[10px] font-bold">08:30 AM</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-slate-600 mt-1">
+                      <span class="material-symbols-outlined text-[14px] text-navy-custom">location_on</span>
+                      <p class="text-[10px] truncate font-medium">KTX Khu B → ĐH Bách Khoa</p>
+                    </div>
+                    <button class="w-full h-8 mt-1 rounded-lg bg-navy-custom text-white text-[11px] font-bold flex items-center justify-center gap-1.5 border-none cursor-pointer">
+                      <span class="material-symbols-outlined text-[14px]">handshake</span> Kết nối
+                    </button>
+                  </div>
+
+                  <div class="rounded-xl border border-slate-100 bg-white p-2.5 shadow-sm flex flex-col gap-2 relative">
+                    <div class="flex justify-between items-start">
+                      <div class="flex gap-2">
+                        <img class="w-8 h-8 rounded-full object-cover bg-slate-200" src="https://i.pravatar.cc/150?img=5" alt="Avatar"/>
+                        <div class="flex flex-col justify-center">
+                          <p class="text-navy-custom text-[12px] font-bold leading-tight">Trần Thị Hoa</p>
+                          <div class="flex gap-1 mt-1">
+                            <span class="bg-navy-custom text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Cho đi ké</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-right">
+                        <p class="text-navy-custom font-bold text-[8px]">10/10/2026</p>
+                        <p class="text-navy-custom text-[10px] font-bold">07:45 AM</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-slate-600 mt-1">
+                      <span class="material-symbols-outlined text-[14px] text-navy-custom">location_on</span>
+                      <p class="text-[10px] truncate font-medium">KTX Khu A → ĐH KHXHVNV  </p>
+                    </div>
+                    <button class="w-full h-8 mt-1 rounded-lg bg-navy-custom text-white text-[11px] font-bold flex items-center justify-center gap-1.5 border-none cursor-pointer">
+                      <span class="material-symbols-outlined text-[14px]">handshake</span> Kết nối
+                    </button>
+                  </div>
+
+                  <div class="rounded-xl border border-slate-100 bg-white p-2.5 shadow-sm flex flex-col gap-2 relative">
+                    <div class="flex justify-between items-start">
+                      <div class="flex gap-2">
+                        <img class="w-8 h-8 rounded-full object-cover bg-slate-200" src="https://i.pravatar.cc/150?img=12" alt="Avatar"/>
+                        <div class="flex flex-col justify-center">
+                          <p class="text-navy-custom text-[12px] font-bold leading-tight">Lê Minh Tâm</p>
+                          <div class="flex gap-1 mt-1">
+                            <span class="bg-navy-custom text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Cho đi ké</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-right">
+                        <p class="text-navy-custom font-bold text-[8px]">10/10/2026</p>
+                        <p class="text-navy-custom text-[10px] font-bold">05:30 PM</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-slate-600 mt-1">
+                      <span class="material-symbols-outlined text-[14px] text-navy-custom">location_on</span>
+                      <p class="text-[10px] truncate font-medium">ĐH KHTN → KTX Khu B</p>
+                    </div>
+                    <button class="w-full h-8 mt-1 rounded-lg bg-navy-custom text-white text-[11px] font-bold flex items-center justify-center gap-1.5 border-none cursor-pointer">
+                      <span class="material-symbols-outlined text-[14px]">handshake</span> Kết nối
+                    </button>
+                  </div>
+                  
                 </div>
               </div>
-              <div class="mock-riders">
-                <div class="mock-rider">
-                  <span>🧑 Tran Thi B</span>
-                  <span class="mock-cost">5,000 ₫</span>
+
+              <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-100 px-4 pb-3 pt-2 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-20">
+                <div class="flex justify-between items-end">
+                  <div class="flex flex-col items-center gap-0.5 text-primary cursor-pointer">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1">home</span>
+                    <span class="text-[8px] font-bold">Trang chủ</span>
+                  </div>
+                  <div class="relative -top-3 cursor-pointer">
+                    <button class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-yellow-accent shadow-lg shadow-primary/30 ring-2 ring-white border-none cursor-pointer">
+                      <span class="material-symbols-outlined text-[24px]">add</span>
+                    </button>
+                  </div>
+                  <div class="flex flex-col items-center gap-0.5 text-slate-400 cursor-pointer">
+                    <span class="material-symbols-outlined text-[20px]">account_circle</span>
+                    <span class="text-[8px] font-bold">Tài khoản</span>
+                  </div>
                 </div>
-                <div class="mock-rider">
-                  <span>👩 Le Van C</span>
-                  <span class="mock-cost">5,000 ₫</span>
-                </div>
-              </div>
-              <div class="mock-total">
-                <span>Total Trip</span>
-                <span class="mock-total__amount">15,000 ₫</span>
-              </div>
-              <button class="mock-btn">Confirm &amp; Split</button>
+              </nav>
+
             </div>
-          </div>
+            </div>
         </div>
         <div class="hero__glow"></div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat">
         <div class="stat__number">100%</div>
-        <div class="stat__label">Fair Cost Splitting</div>
+        <div class="stat__label">Tự do thỏa thuận</div>
       </div>
       <div class="stat">
-        <div class="stat__number">VNU-HCM</div>
-        <div class="stat__label">Campus Focused</div>
+        <div class="stat__number">ĐHQG-HCM</div>
+        <div class="stat__label">Dành riêng cho sinh viên</div>
       </div>
       <div class="stat">
-        <div class="stat__number">⚡ Fast</div>
-        <div class="stat__label">Instant Bill Generation</div>
+        <div class="stat__number">Nhanh</div>
+        <div class="stat__label">Ghép cặp tức thì</div>
       </div>
       <div class="stat">
         <div class="stat__number">0₫</div>
-        <div class="stat__label">Service Fee</div>
+        <div class="stat__label">Phí nền tảng</div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Why DiKeVoi!</p>
-        <h2>Everything you need to ride together</h2>
-        <p class="section-desc">No more awkward conversations about money. DiKeVoi! handles the math so you can focus on the journey.</p>
+        <p class="eyebrow">Tại sao chọn DiKeVoi!</p>
+        <h2>Mọi thứ bạn cần cho một chuyến đi chung</h2>
+        <p class="section-desc">Trống yên sau thì san sẻ tiền xăng, ngại cuốc bộ thì tìm ngay xe ké. DiKeVoi! kết nối đôi bên một cách dễ dàng, giúp mỗi chuyến đi quanh Làng Đại học đều tiết kiệm, nhẹ nhàng và đầy ắp niềm vui.</p>
       </div>
       <div class="features__grid">
         <div class="feature-card">
-          <div class="feature-card__icon">🗺️</div>
-          <h3>Smart Route Matching</h3>
-          <p>Find students heading the same direction within the VNU-HCM campus in seconds. Enter your destination and let DiKeVoi! do the rest.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">alt_route</span>
+          </div>
+          <h3>Ghép cặp thông minh</h3>
+          <p>Nhanh chóng kết nối sinh viên có xe và sinh viên cần đi ké cùng tuyến đường trong Làng Đại học. Chỉ cần nhập điểm đến và để hệ thống lo phần còn lại.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🧮</div>
-          <h3>Automatic Cost Splitting</h3>
-          <p>Costs are divided equally among all riders automatically. No calculators needed — just agree and go.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">handshake</span>
+          </div>
+          <h3>Tự do thỏa thuận</h3>
+          <p>Chi phí hỗ trợ xăng xe (nếu có) được hai bên tự do quyết định. Không ép giá, không thu phí nền tảng, hoàn toàn dựa trên tinh thần sinh viên tương trợ nhau.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">📲</div>
-          <h3>Instant Notifications</h3>
-          <p>Get notified when a ride match is found, when the driver confirms, and when your share is due.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
+          <h3>Thông báo tức thì</h3>
+          <p>Nhận thông báo ngay lập tức khi tìm thấy người đi cùng lộ trình, khi đối phương xác nhận chuyến đi hoặc có tin nhắn mới.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🏫</div>
-          <h3>Campus-Only Network</h3>
-          <p>Exclusively for VNU-HCM students. Verified student accounts keep the community trustworthy and safe.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">school</span>
+          </div>
+          <h3>Mạng lưới nội bộ</h3>
+          <p>Chỉ dành riêng cho sinh viên ĐHQG-HCM. Tài khoản được xác thực qua email sinh viên giúp cộng đồng luôn an toàn và đáng tin cậy.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">💳</div>
-          <h3>Ride History</h3>
-          <p>Track every shared ride, who you rode with, and how much was split. Keep your finances organised effortlessly.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">history</span>
+          </div>
+          <h3>Lịch sử chuyến đi</h3>
+          <p>Theo dõi mọi chuyến đi chung và những người bạn đã từng đồng hành để dễ dàng kết nối lại cho những học kỳ tiếp theo.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🌙</div>
-          <h3>Light &amp; Dark Mode</h3>
-          <p>Comfortable on the eyes day or night. DiKeVoi! adapts to your system theme automatically.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">report</span>
+          </div>
+          <h3>Báo cáo an toàn</h3>
+          <p>Nếu chuyến đi có vấn đề hoặc bạn đồng hành có hành vi không chuẩn mực, bạn có thể gửi báo cáo ngay lập tức để hệ thống xử lý, giúp giữ gìn môi trường đi chung văn minh và an toàn.</p>
         </div>
-      </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Simple Steps</p>
-        <h2>How DiKeVoi! Works</h2>
-        <p class="section-desc">Get from A to B with friends and split the cost in three simple steps.</p>
+        <p class="eyebrow">Các bước đơn giản</p>
+        <h2>Cách DiKeVoi! Hoạt động</h2>
+        <p class="section-desc">Kết nối bạn đồng hành và bắt đầu chuyến đi an toàn chỉ với 3 bước cực kỳ đơn giản.</p>
       </div>
       <div class="steps">
         <div class="step">
           <div class="step__number">01</div>
           <div class="step__content">
-            <h3>Post or Find a Ride</h3>
-            <p>Enter your pickup and drop-off location on campus. Choose to offer a ride or search for an existing one going your way.</p>
+            <h3>Đăng chuyến hoặc Tìm xe</h3>
+            <p>Nhập điểm đi và điểm đến. Bạn có thể chọn đăng chuyến đi (nếu có xe sẵn sàng chở) hoặc tìm xe (nếu bạn đang cần đi ké).</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number">02</div>
           <div class="step__content">
-            <h3>Match &amp; Confirm</h3>
-            <p>DiKeVoi! matches you with students travelling the same route. Accept the match, confirm your seat, and you're good to go.</p>
+            <h3>Ghép cặp &amp; Thỏa thuận</h3>
+            <p>App sẽ tự động ghép cặp hoặc gợi ý danh sách các chuyến đi phù hợp nhất. Sau đó, hai bên có thể nhắn tin trực tiếp để thống nhất điểm đón và chi phí (nếu có).</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number">03</div>
           <div class="step__content">
-            <h3>Ride &amp; Split</h3>
-            <p>Enjoy the ride! When you arrive, the app automatically calculates each person's fair share of the total fare.</p>
+            <h3>Đi chung &amp; Phản hồi</h3>
+            <p>Lên xe và vi vu thôi! Nếu chuyến đi diễn ra tốt đẹp, hãy để lại đánh giá. Nếu có bất kỳ vấn đề gì, bạn có thể Report ngay để bảo vệ cộng đồng.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DOWNLOAD -->
   <section class="download" id="download">
     <div class="container download__inner">
       <div class="download__content">
-        <p class="eyebrow eyebrow--light">Get Started Today</p>
-        <h2>Download DiKeVoi!</h2>
-        <p>Available on iOS and Android. Scan the QR code or tap the button below to get the app — completely free for all VNU-HCM students.</p>
+        <p class="eyebrow eyebrow--light">Bắt đầu ngay hôm nay</p>
+        <h2>Tải ứng dụng DiKeVoi!</h2>
+        <p>Sắp có mặt trên iOS và Android. Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng — hoàn toàn miễn phí cho tất cả sinh viên ĐHQG-HCM.</p>
         <div class="download__buttons">
           <a href="#" class="btn btn--white">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -216,12 +332,11 @@
             Google Play
           </a>
         </div>
-        <p class="download__coming-soon">🚀 Coming soon — stay tuned!</p>
+        <p class="download__coming-soon">Sắp ra mắt — Cùng chờ đón nhé!</p>
       </div>
       <div class="download__qr">
         <div class="qr-placeholder">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-            <!-- QR code pattern (decorative) -->
             <rect x="5" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
             <rect x="13" y="13" width="19" height="19" rx="1"/>
             <rect x="60" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
@@ -242,59 +357,66 @@
             <rect x="44" y="44" width="7" height="51" rx="1"/>
             <rect x="5" y="44" width="35" height="7" rx="1"/>
           </svg>
-          <p>Scan to Download</p>
+          <p>Quét để tải</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEAM -->
   <section class="team" id="team">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">The Builders</p>
-        <h2>Meet the Team</h2>
-        <p class="section-desc">DiKeVoi! is proudly built by Group L02-4795 as part of the Mobile App Development course at VNU-HCM, Semester 252.</p>
+        <p class="eyebrow">Đội ngũ phát triển</p>
+        <h2>Gặp gỡ Nhóm L02-4795</h2>
+        <p class="section-desc">DiKeVoi! là một dự án đầy tự hào được xây dựng bởi Nhóm L02-4795 thuộc môn học Phát triển Ứng dụng Di động tại ĐHQG-HCM, Học kỳ 252.</p>
       </div>
       <div class="team__info-cards">
         <div class="info-card">
-          <div class="info-card__icon">🎓</div>
-          <div class="info-card__label">Course</div>
-          <div class="info-card__value">Mobile App Development</div>
+          <div class="info-card__icon">
+            <span class="material-symbols-outlined">developer_mode</span>
+          </div>
+          <div class="info-card__label">Môn học</div>
+          <div class="info-card__value">Phát triển Ứng dụng Di động</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">👥</div>
-          <div class="info-card__label">Group</div>
+          <div class="info-card__icon">
+            <span class="material-symbols-outlined">group</span>
+          </div>
+          <div class="info-card__label">Nhóm</div>
           <div class="info-card__value">L02-4795</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">🏛️</div>
-          <div class="info-card__label">University</div>
-          <div class="info-card__value">VNU-HCM</div>
+          <div class="info-card__icon">
+            <span class="material-symbols-outlined">account_balance</span>
+          </div>
+          <div class="info-card__label">Trường</div>
+          <div class="info-card__value">Đại học Bách khoa - ĐHQG-HCM</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">📅</div>
-          <div class="info-card__label">Semester</div>
+          <div class="info-card__icon">
+            <span class="material-symbols-outlined">calendar_month</span>
+          </div>
+          <div class="info-card__label">Học kỳ</div>
           <div class="info-card__value">252</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="logo-icon">🛵</span>
-        <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
+        <span class="logo-icon">
+        </span>
+        <span class="logo-text">DiKeVoi!</span></span>
       </div>
-      <p class="footer__tagline">Ride together. Save together.</p>
+      <p class="footer__tagline">Cùng trường, cùng đường, cùng đi!</p>
       <div class="footer__links">
         <a href="https://github.com/DiKeVoi" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#features">Features</a>
-        <a href="#team">Team</a>
+        <a href="#features">Tính năng</a>
+        <a href="#team">Đội ngũ</a>
       </div>
-      <p class="footer__copy">© 2025 DiKeVoi! — Group L02-4795 · VNU-HCM</p>
+      <p class="footer__copy">© 2026 DiKeVoi! — Nhóm L02-4795 · ĐHQG-HCM</p>
     </div>
   </footer>
 
