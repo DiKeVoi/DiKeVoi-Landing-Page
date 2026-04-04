@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DiKeVoi! – Split your campus ride costs fairly. The smart way for VNU-HCM students to share rides and split transportation fees." />
-  <title>DiKeVoi! – Share Rides, Split Costs</title>
+  <meta name="description" content="DiKeVoi! – Chia sẻ chi phí di chuyển trong khuôn viên trường một cách công bằng. Cách thông minh để sinh viên ĐHQG-HCM cùng đi và chia tiền xe." />
+  <title>DiKeVoi! – Chia sẻ chuyến đi, chia sẻ chi phí</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +15,17 @@
   <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="#" class="nav__logo">
-        <span class="logo-icon">🛵</span>
+      <a href="#" class="nav__logo" style="display: flex; align-items: center;">
+        <img src="Logo.png" alt="DiKeVoi Logo" style="width: 40px; height: 40px;" />
         <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
       </a>
       <nav>
         <ul class="nav__links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#download" class="btn btn--sm">Get the App</a></li>
+          <li><a href="#features">Các tính năng</a></li>
+          <li><a href="#how-it-works">Cách hoạt động</a></li>
+          <li><a href="#screenshots">Màn hình</a></li>
+          <li><a href="#team">Đội ngũ</a></li>
+          <li><a href="#download" class="btn btn--sm" style="background-color: var(--green-dark); color: var(--gray-50);">Tải ứng dụng</a></li>
         </ul>
       </nav>
       <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
@@ -37,63 +38,24 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">🎓 For VNU-HCM Students</p>
-        <h1 class="hero__title">Split Campus Rides,<br /><span class="accent">Not Friendships</span></h1>
+        <p class="hero__eyebrow">🎓 Dành cho sinh viên khu vực Khu Đô thị ĐHQG-HCM và lân cận</p>
+        <h1 class="hero__title">Chia Sẻ <br/> Chuyến Đi <span class="logo-icon">🛵</span>,<br /><span class="accent">Chia Sẻ Chi Phí</span></h1>
+         </a>
         <p class="hero__subtitle">
-          DiKeVoi! makes it effortless to share rides with fellow students on the VNU-HCM campus and split the transportation costs — fairly, transparently, and instantly.
+          DiKeVoi! giúp bạn dễ dàng cùng đi chung xe với các bạn sinh viên trong khuôn viên ĐHQG-HCM và chia sẻ chi phí di chuyển — công bằng, minh bạch và tức thì.
         </p>
         <div class="hero__cta">
-          <a href="#download" class="btn btn--primary">Download Now</a>
-          <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
+          <a href="#download" class="btn btn--primary">Tải về ngay</a>
+          <a href="#how-it-works" class="btn btn--outline" style="color: aliceblue;">Xem cách hoạt động</a>
         </div>
         <div class="hero__badges">
           <span class="badge">📱 iOS &amp; Android</span>
-          <span class="badge">⚡ Real-time Splitting</span>
-          <span class="badge">🔒 Secure</span>
+          <span class="badge">⚡ Chia sẻ thời gian thực</span>
+          <span class="badge">🔒 Bảo mật</span>
         </div>
       </div>
       <div class="hero__visual">
-        <iframe width="402" height="874" src="https://embed.figma.com/proto/CrKsOSX9NbTxgPCAKHMD8p/DiKeVoi?node-id=40-960&p=f&scaling=scale-down&content-scaling=fixed&page-id=5%3A500&starting-point-node-id=40%3A960&embed-host=share" ></iframe>
-        <!-- <div class="phone-mockup">
-          <div class="phone-mockup__screen">
-            <div class="mock-screen">
-              <div class="mock-header">
-                <div class="mock-avatar">👤</div>
-                <div>
-                  <div class="mock-name">Nguyen Van A</div>
-                  <div class="mock-sub">Heading to Library Gate</div>
-                </div>
-                <div class="mock-tag">Driver</div>
-              </div>
-              <div class="mock-route">
-                <div class="mock-route__point mock-route__point--start">
-                  <span class="dot dot--green"></span>
-                  Ký túc xá Khu A
-                </div>
-                <div class="mock-route__line"></div>
-                <div class="mock-route__point">
-                  <span class="dot dot--red"></span>
-                  Cổng Thư viện Trung tâm
-                </div>
-              </div>
-              <div class="mock-riders">
-                <div class="mock-rider">
-                  <span>🧑 Tran Thi B</span>
-                  <span class="mock-cost">5,000 ₫</span>
-                </div>
-                <div class="mock-rider">
-                  <span>👩 Le Van C</span>
-                  <span class="mock-cost">5,000 ₫</span>
-                </div>
-              </div>
-              <div class="mock-total">
-                <span>Total Trip</span>
-                <span class="mock-total__amount">15,000 ₫</span>
-              </div>
-              <button class="mock-btn">Confirm &amp; Split</button>
-            </div>
-          </div>
-        </div> -->
+        <img src="ScreenFlow/DiKeVoi/Home.svg" alt="DiKeVoi!" class="hero__phone-img" />
         <div class="hero__glow"></div>
       </div>
     </div>
@@ -104,19 +66,19 @@
     <div class="container stats__grid">
       <div class="stat">
         <div class="stat__number">100%</div>
-        <div class="stat__label">Fair Cost Splitting</div>
+        <div class="stat__label">Chia sẻ chi phí công bằng. Sinh viên tự thoả thuận</div>
       </div>
       <div class="stat">
         <div class="stat__number">VNU-HCM</div>
-        <div class="stat__label">Campus Focused</div>
+        <div class="stat__label">Tập trung trong khu vực Khu đô thị ĐHQG-HCM</div>
       </div>
       <div class="stat">
-        <div class="stat__number">⚡ Fast</div>
-        <div class="stat__label">Instant Bill Generation</div>
+        <div class="stat__number">⚡ Nhanh</div>
+        <div class="stat__label">Xác nhận chuyến đi, xác nhận thanh toán tức thì</div>
       </div>
       <div class="stat">
         <div class="stat__number">0₫</div>
-        <div class="stat__label">Service Fee</div>
+        <div class="stat__label">Phí dịch vụ</div>
       </div>
     </div>
   </section>
@@ -125,41 +87,40 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Why DiKeVoi!</p>
-        <h2>Everything you need to ride together</h2>
-        <p class="section-desc">No more awkward conversations about money. DiKeVoi! handles the math so you can focus on the journey.</p>
+        <p class="eyebrow">Tại sao chọn DiKeVoi!</p>
+        <h2>Tất cả những gì bạn cần để "đi ké" và "cho đi ké"</h2>
+        <p class="section-desc">DiKeVoi! giúp bạn dễ dàng tìm kiếm những sinh viên có cùng tuyến đường với bản thân, "đi ké" hoặc "cho đi ké" với người đó, giảm chi phí di chuyển cho cả hai.</p>
       </div>
       <div class="features__grid">
         <div class="feature-card">
           <div class="feature-card__icon">🗺️</div>
-          <h3>Smart Route Matching</h3>
-          <p>Find students heading the same direction within the VNU-HCM campus in seconds. Enter your destination and let DiKeVoi! do the rest.</p>
+          <h3>Ghép tuyến đường thông minh</h3>
+          <p>Tìm sinh viên đi cùng hướng trong khuôn viên ĐHQG-HCM chỉ trong vài giây. Nhập điểm đi, điểm đến cùng với các tuỳ chọn khác và để DiKeVoi! làm phần còn lại.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">👨‍💼</div>
+          <h3>Lựa chọn người đi cùng thủ công</h3>
+          <p>Chọn người đ cùng một cách thủ công, bằng cách ghép đôi với người muốn đi ké, hoặc yêu cầu đi ké đối với người khác.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">🧮</div>
-          <h3>Automatic Cost Splitting</h3>
-          <p>Costs are divided equally among all riders automatically. No calculators needed — just agree and go.</p>
+          <h3>Thoả thuận chi phí</h3>
+          <p>Sau khi ghép đôi, bạn và người đi cùng có thể thoả thuận về cách chia sẻ chi phí cho chuyến đi. Thoả thuận được lưu lại để tham khảo trong tương lai.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">📲</div>
-          <h3>Instant Notifications</h3>
-          <p>Get notified when a ride match is found, when the driver confirms, and when your share is due.</p>
+          <h3>Thông báo tức thì</h3>
+          <p>Nhận thông báo khi tìm được chuyến đi phù hợp, khi người đi cùng xác nhận và khi đến lượt bạn thanh toán.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">🏫</div>
-          <h3>Campus-Only Network</h3>
-          <p>Exclusively for VNU-HCM students. Verified student accounts keep the community trustworthy and safe.</p>
+          <h3>Mạng lưới nội bộ khuôn viên</h3>
+          <p>Chỉ dành riêng cho sinh viên sinh sống trong khu vực Khu đô thị ĐHQG-HCM và lân cận. Tài khoản sinh viên được xác minh giúp cộng đồng đáng tin cậy và an toàn.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">💳</div>
-          <h3>Ride History</h3>
-          <p>Track every shared ride, who you rode with, and how much was split. Keep your finances organised effortlessly.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">🌙</div>
-          <h3>Light &amp; Dark Mode</h3>
-          <p>Comfortable on the eyes day or night. DiKeVoi! adapts to your system theme automatically.</p>
-        </div>
+          <h3>Lịch sử chuyến đi</h3>
+          <p>Theo dõi từng chuyến đi chung, người đã đi cùng và số tiền đã chia. Quản lý tài chính cá nhân thật dễ dàng.</p> </div>
       </div>
     </div>
   </section>
@@ -168,32 +129,133 @@
   <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Simple Steps</p>
-        <h2>How DiKeVoi! Works</h2>
-        <p class="section-desc">Get from A to B with friends and split the cost in three simple steps.</p>
+        <p class="eyebrow">Các bước đơn giản</p>
+        <h2>DiKeVoi! Hoạt Động Như Thế Nào</h2>
+        <p class="section-desc">Di chuyển cùng bạn bè và chia chi phí chỉ với ba bước đơn giản.</p>
       </div>
       <div class="steps">
         <div class="step">
           <div class="step__number">01</div>
           <div class="step__content">
-            <h3>Post or Find a Ride</h3>
-            <p>Enter your pickup and drop-off location on campus. Choose to offer a ride or search for an existing one going your way.</p>
+            <h3>Đăng hoặc Tìm chuyến đi</h3>
+            <p>Nhập điểm đón và điểm trả trong khuôn viên trường. Chọn cung cấp chuyến đi hoặc tìm kiếm chuyến đi có sẵn đi cùng hướng với bạn.</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number">02</div>
           <div class="step__content">
-            <h3>Match &amp; Confirm</h3>
-            <p>DiKeVoi! matches you with students travelling the same route. Accept the match, confirm your seat, and you're good to go.</p>
+            <h3>Ghép đôi &amp; Thoả thuận</h3>
+            <p>DiKeVoi! ghép bạn với sinh viên đi cùng tuyến. Chấp nhận ghép đôi, thoả thuận về cách chia sẻ chi phí và sẵn sàng lên đường.</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number">03</div>
           <div class="step__content">
-            <h3>Ride &amp; Split</h3>
-            <p>Enjoy the ride! When you arrive, the app automatically calculates each person's fair share of the total fare.</p>
+            <h3>Đi xe &amp; Chia tiền</h3>
+            <p>Tận hưởng chuyến đi! Khi đến nơi, xác nhận thanh toán với người đi cùng trên ứng dụng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Xem trước ứng dụng</p>
+        <h2>Màn hình ứng dụng</h2>
+        <p class="section-desc">Giao diện trực quan, dễ dùng — từ lúc đăng ký đến khi hoàn thành chuyến đi.</p>
+      </div>
+
+      <div class="screenshots__group">
+        <h3 class="screenshots__group-title">Khởi động</h3>
+        <div class="screenshots__row">
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Onboarding 1.svg" alt="Onboarding 1" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Onboarding 2.svg" alt="Onboarding 2" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Onboarding 3.svg" alt="Onboarding 3" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Login.svg" alt="Đăng nhập" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Account.svg" alt="Tài khoản" />
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshots__group">
+        <h3 class="screenshots__group-title">Tìm & Đăng chuyến đi</h3>
+        <div class="screenshots__row">
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home.svg" alt="Trang chủ" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - All request.svg" alt="Tất cả yêu cầu" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - All request-1.svg" alt="Tất cả yêu cầu (2)" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - Request.svg" alt="Yêu cầu" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Request.svg" alt="Tạo yêu cầu" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Info.svg" alt="Thông tin chuyến" />
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshots__group">
+        <h3 class="screenshots__group-title">Ghép đôi & Chuyến đi</h3>
+        <div class="screenshots__row">
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Matching.svg" alt="Ghép đôi" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Matching - Đi ké.svg" alt="Đi ké" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Matching - Cho đi ké.svg" alt="Cho đi ké" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Connect.svg" alt="Kết nối" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Message detail.svg" alt="Tin nhắn" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Finish.svg" alt="Hoàn thành" />
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshots__group">
+        <h3 class="screenshots__group-title">Lịch sử & Báo cáo</h3>
+        <div class="screenshots__row">
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Lịch sử chuyến đi - Hoàn thành.svg" alt="Lịch sử - Hoàn thành" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Lịch sử chuyến đi - Đã hủy.svg" alt="Lịch sử - Đã hủy" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Report.svg" alt="Báo cáo" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Report detail.svg" alt="Chi tiết báo cáo" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Report success.svg" alt="Báo cáo thành công" />
           </div>
         </div>
       </div>
@@ -204,9 +266,9 @@
   <section class="download" id="download">
     <div class="container download__inner">
       <div class="download__content">
-        <p class="eyebrow eyebrow--light">Get Started Today</p>
-        <h2>Download DiKeVoi!</h2>
-        <p>Available on iOS and Android. Scan the QR code or tap the button below to get the app — completely free for all VNU-HCM students.</p>
+        <p class="eyebrow eyebrow--light">Bắt đầu ngay hôm nay</p>
+        <h2>Tải xuống DiKeVoi!</h2>
+        <p>Có sẵn trên iOS và Android. Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng — hoàn toàn miễn phí cho tất cả sinh viên ĐHQG-HCM.</p>
         <div class="download__buttons">
           <a href="#" class="btn btn--white">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -217,7 +279,7 @@
             Google Play
           </a>
         </div>
-        <p class="download__coming-soon">🚀 Coming soon — stay tuned!</p>
+        <p class="download__coming-soon">🚀 Sắp ra mắt — hãy đón chờ!</p>
       </div>
       <div class="download__qr">
         <div class="qr-placeholder">
@@ -243,7 +305,7 @@
             <rect x="44" y="44" width="7" height="51" rx="1"/>
             <rect x="5" y="44" width="35" height="7" rx="1"/>
           </svg>
-          <p>Scan to Download</p>
+          <p>Quét để tải xuống</p>
         </div>
       </div>
     </div>
@@ -253,29 +315,29 @@
   <section class="team" id="team">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">The Builders</p>
-        <h2>Meet the Team</h2>
-        <p class="section-desc">DiKeVoi! is proudly built by Group L02-4795 as part of the Mobile App Development course at VNU-HCM, Semester 252.</p>
+        <p class="eyebrow">Những người xây dựng</p>
+        <h2>Gặp gỡ đội ngũ</h2>
+        <p class="section-desc">DiKeVoi! được tự hào xây dựng bởi Nhóm L02-4795 trong khuôn khổ môn học Phát triển Ứng dụng trên Thiết bị di động tại Trường Đại học Bách khoa - ĐHQG-HCM, Học kỳ 252.</p>
       </div>
       <div class="team__info-cards">
         <div class="info-card">
           <div class="info-card__icon">🎓</div>
-          <div class="info-card__label">Course</div>
-          <div class="info-card__value">Mobile App Development</div>
+          <div class="info-card__label">Môn học</div>
+          <div class="info-card__value">Phát triển Ứng dụng trên Thiết bị di động</div>
         </div>
         <div class="info-card">
           <div class="info-card__icon">👥</div>
-          <div class="info-card__label">Group</div>
+          <div class="info-card__label">Nhóm</div>
           <div class="info-card__value">L02-4795</div>
         </div>
         <div class="info-card">
           <div class="info-card__icon">🏛️</div>
-          <div class="info-card__label">University</div>
-          <div class="info-card__value">VNU-HCM</div>
+          <div class="info-card__label">Trường đại học</div>
+          <div class="info-card__value">Trường Đại học Bách khoa - ĐHQG-HCM</div>
         </div>
         <div class="info-card">
           <div class="info-card__icon">📅</div>
-          <div class="info-card__label">Semester</div>
+          <div class="info-card__label">Học kỳ</div>
           <div class="info-card__value">252</div>
         </div>
       </div>
@@ -286,16 +348,16 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="logo-icon">🛵</span>
+        <img src="Logo.png" alt="DiKeVoi Logo" class="footer__logo" style="width: 40px; height: 40px;" />
         <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
       </div>
-      <p class="footer__tagline">Ride together. Save together.</p>
+      <p class="footer__tagline">Cùng đi. Cùng tiết kiệm.</p>
       <div class="footer__links">
         <a href="https://github.com/DiKeVoi" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#features">Features</a>
-        <a href="#team">Team</a>
+        <a href="#features">Tính năng</a>
+        <a href="#team">Đội ngũ</a>
       </div>
-      <p class="footer__copy">© 2025 DiKeVoi! — Group L02-4795 · VNU-HCM</p>
+      <p class="footer__copy">© 2025 DiKeVoi! — Group L02-4795 · Trường Đại học Bách khoa - ĐHQG-HCM</p>
     </div>
   </footer>
 
