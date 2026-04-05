@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 </head>
 <body>
 
@@ -17,7 +18,7 @@
     <div class="container nav__inner">
       <a href="#" class="nav__logo" style="display: flex; align-items: center;">
         <img src="Logo.png" alt="DiKeVoi Logo" style="width: 40px; height: 40px;" />
-        <span class="logo-text">DiKeVoi<span class="accent">!</span></span>
+        <span class="logo-text">DiKeVoi</span>
       </a>
       <nav>
         <ul class="nav__links">
@@ -35,24 +36,23 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+ <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">🎓 Dành cho sinh viên khu vực Khu Đô thị ĐHQG-HCM và lân cận</p>
-        <h1 class="hero__title">Chia Sẻ <br/> Chuyến Đi <span class="logo-icon">🛵</span>,<br /><span class="accent">Chia Sẻ Chi Phí</span></h1>
-         </a>
+        <p class="hero__eyebrow">Dành cho sinh viên Làng Đại học!</p>
+        <h1 class="hero__title">Cùng trường, cùng đường, cùng đi!</span></h1>
         <p class="hero__subtitle">
-          DiKeVoi! giúp bạn dễ dàng cùng đi chung xe với các bạn sinh viên trong khuôn viên ĐHQG-HCM và chia sẻ chi phí di chuyển — công bằng, minh bạch và tức thì.
-        </p>
+            DiKeVoi! là ứng dụng phi lợi nhuận giúp kết nối các bạn sinh viên có xe và những bạn cần đi ké trên cùng tuyến đường quanh Làng Đại học. Lên xe vi vu cùng nhau, chi phí hỗ trợ xăng xe hoàn toàn do hai bên tự do thỏa thuận hoặc thậm chí là chở nhau miễn phí!        </p>
         <div class="hero__cta">
-          <a href="#download" class="btn btn--primary">Tải về ngay</a>
-          <a href="#how-it-works" class="btn btn--outline" style="color: aliceblue;">Xem cách hoạt động</a>
+          <a href="#download" class="btn btn--primary">Tải Xuống Ngay</a>
+          <a href="#how-it-works" class="btn btn--outline">Tìm hiểu cách hoạt động</a>
         </div>
         <div class="hero__badges">
-          <span class="badge">📱 iOS &amp; Android</span>
-          <span class="badge">⚡ Chia sẻ thời gian thực</span>
-          <span class="badge">🔒 Bảo mật</span>
+          <span class="badge"><span class="material-symbols-outlined">smartphone</span>Ứng dụng iOS &amp; Android</span>
+          <span class="badge"><span class="material-symbols-outlined">location_on</span>Đón tận nơi trong KTX</span>
+          <span class="badge"><span class="material-symbols-outlined">verified_user</span>Cộng đồng sinh viên an toàn</span>
         </div>
+      </div> 
       </div>
       <div class="hero__visual">
         <img src="ScreenFlow/DiKeVoi/Home.svg" alt="DiKeVoi!" class="hero__phone-img" />
@@ -73,7 +73,7 @@
         <div class="stat__label">Tập trung trong khu vực Khu đô thị ĐHQG-HCM</div>
       </div>
       <div class="stat">
-        <div class="stat__number">⚡ Nhanh</div>
+        <div class="stat__number">Nhanh</div>
         <div class="stat__label">Xác nhận chuyến đi, xác nhận thanh toán tức thì</div>
       </div>
       <div class="stat">
@@ -85,44 +85,49 @@
 
   <!-- FEATURES -->
   <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Tại sao chọn DiKeVoi!</p>
-        <h2>Tất cả những gì bạn cần để "đi ké" và "cho đi ké"</h2>
-        <p class="section-desc">DiKeVoi! giúp bạn dễ dàng tìm kiếm những sinh viên có cùng tuyến đường với bản thân, "đi ké" hoặc "cho đi ké" với người đó, giảm chi phí di chuyển cho cả hai.</p>
-      </div>
-      <div class="features__grid">
+    <div class="features__grid">
         <div class="feature-card">
-          <div class="feature-card__icon">🗺️</div>
-          <h3>Ghép tuyến đường thông minh</h3>
-          <p>Tìm sinh viên đi cùng hướng trong khuôn viên ĐHQG-HCM chỉ trong vài giây. Nhập điểm đi, điểm đến cùng với các tuỳ chọn khác và để DiKeVoi! làm phần còn lại.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">alt_route</span>
+          </div>
+          <h3>Ghép cặp thông minh</h3>
+          <p>Nhanh chóng kết nối sinh viên có xe và sinh viên cần đi ké cùng tuyến đường trong Làng Đại học. Chỉ cần nhập điểm đến và để hệ thống lo phần còn lại.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">👨‍💼</div>
-          <h3>Lựa chọn người đi cùng thủ công</h3>
-          <p>Chọn người đ cùng một cách thủ công, bằng cách ghép đôi với người muốn đi ké, hoặc yêu cầu đi ké đối với người khác.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">handshake</span>
+          </div>
+          <h3>Tự do thỏa thuận</h3>
+          <p>Chi phí hỗ trợ xăng xe (nếu có) được hai bên tự do quyết định. Không ép giá, không thu phí nền tảng, hoàn toàn dựa trên tinh thần sinh viên tương trợ nhau.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🧮</div>
-          <h3>Thoả thuận chi phí</h3>
-          <p>Sau khi ghép đôi, bạn và người đi cùng có thể thoả thuận về cách chia sẻ chi phí cho chuyến đi. Thoả thuận được lưu lại để tham khảo trong tương lai.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">📲</div>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
           <h3>Thông báo tức thì</h3>
-          <p>Nhận thông báo khi tìm được chuyến đi phù hợp, khi người đi cùng xác nhận và khi đến lượt bạn thanh toán.</p>
+          <p>Nhận thông báo ngay lập tức khi tìm thấy người đi cùng lộ trình, khi đối phương xác nhận chuyến đi hoặc có tin nhắn mới.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🏫</div>
-          <h3>Mạng lưới nội bộ khuôn viên</h3>
-          <p>Chỉ dành riêng cho sinh viên sinh sống trong khu vực Khu đô thị ĐHQG-HCM và lân cận. Tài khoản sinh viên được xác minh giúp cộng đồng đáng tin cậy và an toàn.</p>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">school</span>
+          </div>
+          <h3>Mạng lưới nội bộ</h3>
+          <p>Chỉ dành riêng cho sinh viên ĐHQG-HCM. Tài khoản được xác thực qua email sinh viên giúp cộng đồng luôn an toàn và đáng tin cậy.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">💳</div>
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">history</span>
+          </div>
           <h3>Lịch sử chuyến đi</h3>
-          <p>Theo dõi từng chuyến đi chung, người đã đi cùng và số tiền đã chia. Quản lý tài chính cá nhân thật dễ dàng.</p> </div>
-      </div>
-    </div>
+          <p>Theo dõi mọi chuyến đi chung và những người bạn đã từng đồng hành để dễ dàng kết nối lại cho những học kỳ tiếp theo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">report</span>
+          </div>
+          <h3>Báo cáo an toàn</h3>
+          <p>Nếu chuyến đi có vấn đề hoặc bạn đồng hành có hành vi không chuẩn mực, bạn có thể gửi báo cáo ngay lập tức để hệ thống xử lý, giúp giữ gìn môi trường đi chung văn minh và an toàn.</p>
+        </div>
   </section>
 
   <!-- HOW IT WORKS -->
@@ -135,7 +140,7 @@
       </div>
       <div class="steps">
         <div class="step">
-          <div class="step__number">01</div>
+          <div class="step__number"><span class="material-symbols-outlined">add_location_alt</span></div>
           <div class="step__content">
             <h3>Đăng hoặc Tìm chuyến đi</h3>
             <p>Nhập điểm đón và điểm trả trong khuôn viên trường. Chọn cung cấp chuyến đi hoặc tìm kiếm chuyến đi có sẵn đi cùng hướng với bạn.</p>
@@ -143,7 +148,7 @@
         </div>
         <div class="step__connector"></div>
         <div class="step">
-          <div class="step__number">02</div>
+          <div class="step__number"><span class="material-symbols-outlined">handshake</span></div>
           <div class="step__content">
             <h3>Ghép đôi &amp; Thoả thuận</h3>
             <p>DiKeVoi! ghép bạn với sinh viên đi cùng tuyến. Chấp nhận ghép đôi, thoả thuận về cách chia sẻ chi phí và sẵn sàng lên đường.</p>
@@ -151,7 +156,7 @@
         </div>
         <div class="step__connector"></div>
         <div class="step">
-          <div class="step__number">03</div>
+          <div class="step__number"><span class="material-symbols-outlined">task_alt</span></div>
           <div class="step__content">
             <h3>Đi xe &amp; Chia tiền</h3>
             <p>Tận hưởng chuyến đi! Khi đến nơi, xác nhận thanh toán với người đi cùng trên ứng dụng.</p>
@@ -321,22 +326,22 @@
       </div>
       <div class="team__info-cards">
         <div class="info-card">
-          <div class="info-card__icon">🎓</div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">phone_android</span></div>
           <div class="info-card__label">Môn học</div>
           <div class="info-card__value">Phát triển Ứng dụng trên Thiết bị di động</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">👥</div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">group</span></div>
           <div class="info-card__label">Nhóm</div>
           <div class="info-card__value">L02-4795</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">🏛️</div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">account_balance</span></div>
           <div class="info-card__label">Trường đại học</div>
           <div class="info-card__value">Trường Đại học Bách khoa - ĐHQG-HCM</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">📅</div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">calendar_month</span></div>
           <div class="info-card__label">Học kỳ</div>
           <div class="info-card__value">252</div>
         </div>
