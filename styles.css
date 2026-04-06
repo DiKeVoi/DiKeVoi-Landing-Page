@@ -58,6 +58,17 @@ img {
   max-width: 100%;
   display: block;
 }
+.logo-icon {
+  display: inline-block; 
+  width: 32px; 
+  height: 32px;
+  background-image: url('images/logo.png'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+img { max-width: 100%; display: block; }
 
 .container {
   width: 100%;
@@ -363,6 +374,7 @@ img {
   pointer-events: none;
 }
 
+
 .phone-mockup {
   width: 260px;
   background: var(--gray-900);
@@ -379,6 +391,8 @@ img {
   background: var(--white);
   border-radius: 28px;
   overflow: hidden;
+  position: relative;
+  height: 520px; /* Thêm chiều cao cố định để màn hình App có thể scroll được */
 }
 
 .mock-screen {
@@ -718,6 +732,7 @@ img {
   gap: 16px;
   overflow-x: auto;
   padding-bottom: 12px;
+  align-items: flex-start;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -739,12 +754,16 @@ img {
 .screenshot-item {
   flex: 0 0 auto;
   width: 180px;
+  height: 390px;
+  overflow-y: auto;
   scroll-snap-align: start;
   border-radius: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 4px 20px rgba(21,34,73,0.10);
   background: var(--white);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .screenshot-item:hover {
@@ -899,6 +918,15 @@ img {
   text-align: center;
 }
 
+.footer__brand .logo-icon {
+  background-color: var(--white); 
+  border-radius: 50%; 
+  padding: 4px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
+}
 .footer__inner {
   display: flex;
   flex-direction: column;
