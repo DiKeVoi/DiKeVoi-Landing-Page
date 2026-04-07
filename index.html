@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DiKeVoi! – Ứng dụng ghép cặp sinh viên (có xe và cần đi ké) cùng tuyến đường trong Làng đại học. Cùng trường, cùng đường, cùng đi!" />
-  <title>DiKeVoi! – Cùng trường, cùng đường, cùng đi!</title>
-  
+  <meta name="description" content="DiKeVoi! – Chia sẻ chi phí di chuyển trong khuôn viên trường một cách công bằng. Cách thông minh để sinh viên ĐHQG-HCM cùng đi và chia tiền xe." />
+  <title>DiKeVoi! – Chia sẻ chuyến đi, chia sẻ chi phí</title>
   <link rel="stylesheet" href="styles.css" />
-  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -15,6 +13,7 @@
 </head>
 <body>
 
+  <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
       <a href="#" class="nav__logo" style="display: flex; align-items: center;">
@@ -30,7 +29,7 @@
           <li><a href="#download" class="btn btn--sm" style="background-color: var(--green-dark); color: var(--gray-50);">Tải ứng dụng</a></li>
         </ul>
       </nav>
-      <button class="nav__hamburger" id="hamburger" aria-label="Mở menu">
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -38,58 +37,55 @@
 
   <!-- HERO -->
  <section class="hero">
-  <div class="container hero__inner">
-    
-    <div class="hero__content">
-      <p class="hero__eyebrow">Dành cho sinh viên Làng Đại học!</p>
-      <h1 class="hero__title">Cùng trường, cùng đường, cùng đi!</h1> <p class="hero__subtitle">
-          DiKeVoi! là ứng dụng phi lợi nhuận giúp kết nối các bạn sinh viên có xe và những bạn cần đi ké trên cùng tuyến đường quanh Làng Đại học. Lên xe vi vu cùng nhau, chi phí hỗ trợ xăng xe hoàn toàn do hai bên tự do thỏa thuận hoặc thậm chí là chở nhau miễn phí! 
-      </p>
-      <div class="hero__cta">
-        <a href="#download" class="btn btn--primary">Tải Xuống Ngay</a>
-        <a href="#how-it-works" class="btn btn--outline">Tìm hiểu cách hoạt động</a>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Dành cho sinh viên Làng Đại học!</p>
+        <h1 class="hero__title">Cùng trường, cùng đường, cùng đi!</span></h1>
+        <p class="hero__subtitle">
+            DiKeVoi! là ứng dụng phi lợi nhuận giúp kết nối các bạn sinh viên có xe và những bạn cần đi ké trên cùng tuyến đường quanh Làng Đại học. Lên xe vi vu cùng nhau, chi phí hỗ trợ xăng xe hoàn toàn do hai bên tự do thỏa thuận hoặc thậm chí là chở nhau miễn phí!        </p>
+        <div class="hero__cta">
+          <a href="#download" class="btn btn--primary">Tải Xuống Ngay</a>
+          <a href="#how-it-works" class="btn btn--outline">Tìm hiểu cách hoạt động</a>
+        </div>
+        <div class="hero__badges">
+          <span class="badge"><span class="material-symbols-outlined">smartphone</span>Ứng dụng iOS &amp; Android</span>
+          <span class="badge"><span class="material-symbols-outlined">location_on</span>Đón tận nơi trong KTX</span>
+          <span class="badge"><span class="material-symbols-outlined">verified_user</span>Cộng đồng sinh viên an toàn</span>
+        </div>
+      </div> 
+      <div class="hero__visual">
+        <img src="ScreenFlow/DiKeVoi/Home.svg" alt="DiKeVoi!" class="hero__phone-img" />
+        <div class="hero__glow"></div>
       </div>
-      <div class="hero__badges">
-        <span class="badge"><span class="material-symbols-outlined">smartphone</span>Ứng dụng iOS &amp; Android</span>
-        <span class="badge"><span class="material-symbols-outlined">location_on</span>Đón tận nơi trong KTX</span>
-        <span class="badge"><span class="material-symbols-outlined">verified_user</span>Cộng đồng sinh viên an toàn</span>
-      </div>
-    </div> <div class="hero__visual">
-      <img src="ScreenFlow/DiKeVoi/Home.svg" alt="DiKeVoi!" class="hero__phone-img" />
-      <div class="hero__glow"></div>
-    </div>
-
-  </div> </section>
-
-  <section class="stats">
-    <div class="container stats__grid">
-      <div class="stat">
-        <div class="stat__number">100%</div>
-        <div class="stat__label">Tự do thỏa thuận</div>
-      </div>
-      <div class="stat">
-        <div class="stat__number">ĐHQG-HCM</div>
-        <div class="stat__label">Dành riêng cho sinh viên</div>
-      </div>
-      <div class="stat">
-        <div class="stat__number">Nhanh</div>
-        <div class="stat__label">Ghép cặp tức thì</div>
-      </div>
-      <div class="stat">
-        <div class="stat__number">0₫</div>
-        <div class="stat__label">Phí nền tảng</div>
       </div>
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Tại sao chọn DiKeVoi!</p>
-        <h2>Mọi thứ bạn cần cho một chuyến đi chung</h2>
-        <p class="section-desc">Trống yên sau thì san sẻ tiền xăng, ngại cuốc bộ thì tìm ngay xe ké. DiKeVoi! kết nối đôi bên một cách dễ dàng, giúp mỗi chuyến đi quanh Làng Đại học đều tiết kiệm, nhẹ nhàng và đầy ắp niềm vui.</p>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__number">100%</div>
+        <div class="stat__label">Chia sẻ chi phí công bằng. Sinh viên tự thoả thuận</div>
       </div>
-      <div class="features__grid">
+      <div class="stat">
+        <div class="stat__number">VNU-HCM</div>
+        <div class="stat__label">Tập trung trong khu vực Khu đô thị ĐHQG-HCM</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">Nhanh</div>
+        <div class="stat__label">Xác nhận chuyến đi, xác nhận thanh toán tức thì</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">0₫</div>
+        <div class="stat__label">Phí dịch vụ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="features__grid">
         <div class="feature-card">
           <div class="feature-card__icon">
             <span class="material-symbols-outlined">alt_route</span>
@@ -132,38 +128,38 @@
           <h3>Báo cáo an toàn</h3>
           <p>Nếu chuyến đi có vấn đề hoặc bạn đồng hành có hành vi không chuẩn mực, bạn có thể gửi báo cáo ngay lập tức để hệ thống xử lý, giúp giữ gìn môi trường đi chung văn minh và an toàn.</p>
         </div>
-    </div>
   </section>
 
+  <!-- HOW IT WORKS -->
   <section class="how-it-works" id="how-it-works">
     <div class="container">
       <div class="section-header">
         <p class="eyebrow">Các bước đơn giản</p>
-        <h2>Cách DiKeVoi! Hoạt động</h2>
-        <p class="section-desc">Kết nối bạn đồng hành và bắt đầu chuyến đi an toàn chỉ với 3 bước cực kỳ đơn giản.</p>
+        <h2>DiKeVoi! Hoạt Động Như Thế Nào</h2>
+        <p class="section-desc">Di chuyển cùng bạn bè và chia chi phí chỉ với ba bước đơn giản.</p>
       </div>
       <div class="steps">
         <div class="step">
           <div class="step__number"><span class="material-symbols-outlined">add_location_alt</span></div>
           <div class="step__content">
-            <h3>Đăng chuyến hoặc Tìm xe</h3>
-            <p>Nhập điểm đi và điểm đến. Bạn có thể chọn đăng chuyến đi (nếu có xe sẵn sàng chở) hoặc tìm xe (nếu bạn đang cần đi ké).</p>
+            <h3>Đăng hoặc Tìm chuyến đi</h3>
+            <p>Nhập điểm đón và điểm trả trong khuôn viên trường. Chọn cung cấp chuyến đi hoặc tìm kiếm chuyến đi có sẵn đi cùng hướng với bạn.</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number"><span class="material-symbols-outlined">handshake</span></div>
           <div class="step__content">
-            <h3>Ghép cặp &amp; Thỏa thuận</h3>
-            <p>App sẽ tự động ghép cặp hoặc gợi ý danh sách các chuyến đi phù hợp nhất. Sau đó, hai bên có thể nhắn tin trực tiếp để thống nhất điểm đón và chi phí (nếu có).</p>
+            <h3>Ghép đôi &amp; Thoả thuận</h3>
+            <p>DiKeVoi! ghép bạn với sinh viên đi cùng tuyến. Chấp nhận ghép đôi, thoả thuận về cách chia sẻ chi phí và sẵn sàng lên đường.</p>
           </div>
         </div>
         <div class="step__connector"></div>
         <div class="step">
           <div class="step__number"><span class="material-symbols-outlined">task_alt</span></div>
           <div class="step__content">
-            <h3>Đi xe &amp; Đánh giá</h3>
-            <p>Tận hưởng chuyến đi! Khi đến nơi, xác nhận hoàn thành chuyến đi trên app. Nếu có bất kỳ vấn đề gì, bạn có thể Report ngay để bảo vệ cộng đồng.</p>
+            <h3>Đi xe &amp; Chia tiền</h3>
+            <p>Tận hưởng chuyến đi! Khi đến nơi, xác nhận thanh toán với người đi cùng trên ứng dụng.</p>
           </div>
         </div>
       </div>
@@ -176,7 +172,7 @@
       <div class="section-header">
         <p class="eyebrow">Xem trước ứng dụng</p>
         <h2>Màn hình ứng dụng</h2>
-        <p class="section-desc">Giao diện trực quan, dễ dùng — từ lúc bắt đầu đăng ký đến khi hoàn thành chuyến đi.</p>
+        <p class="section-desc">Giao diện trực quan, dễ dùng — từ lúc đăng ký đến khi hoàn thành chuyến đi.</p>
       </div>
 
       <div class="screenshots__group">
@@ -194,18 +190,39 @@
           <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Login.svg" alt="Đăng nhập" />
           </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Account.svg" alt="Tài khoản" />
+          </div>
         </div>
       </div>
 
       <div class="screenshots__group">
-        <h3 class="screenshots__group-title">Tạo, ghép và hoàn thành chuyến đi</h3>
+        <h3 class="screenshots__group-title">Tìm & Đăng chuyến đi</h3>
         <div class="screenshots__row">
           <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Home.svg" alt="Trang chủ" />
           </div>
           <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - All request.svg" alt="Tất cả yêu cầu" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - All request-1.svg" alt="Tất cả yêu cầu (2)" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Home - Request.svg" alt="Yêu cầu" />
+          </div>
+          <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Request.svg" alt="Tạo yêu cầu" />
           </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Info.svg" alt="Thông tin chuyến" />
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshots__group">
+        <h3 class="screenshots__group-title">Ghép đôi & Chuyến đi</h3>
+        <div class="screenshots__row">
           <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Matching.svg" alt="Ghép đôi" />
           </div>
@@ -224,39 +241,12 @@
           <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Finish.svg" alt="Hoàn thành" />
           </div>
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Report.svg" alt="Báo cáo" />
-          </div>
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Report success.svg" alt="Báo cáo thành công" />
-          </div>
         </div>
       </div>
 
       <div class="screenshots__group">
-        <h3 class="screenshots__group-title">Thông báo ghép chuyến</h3>
+        <h3 class="screenshots__group-title">Lịch sử & Báo cáo</h3>
         <div class="screenshots__row">
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Home - All request.svg" alt="Tất cả yêu cầu" />
-          </div>
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Home - All request-1.svg" alt="Tất cả yêu cầu (2)" />
-          </div>
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Home - Request.svg" alt="Yêu cầu" />
-          </div>
-        </div>
-      </div>
-
-      <div class="screenshots__group">
-        <h3 class="screenshots__group-title">Tài khoản, Lịch sử & Báo cáo</h3>
-        <div class="screenshots__row">
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Account.svg" alt="Tài khoản" />
-          </div>
-          <div class="screenshot-item">
-            <img src="ScreenFlow/DiKeVoi/Info.svg" alt="Thông tin cá nhân" />
-          </div>
           <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Lịch sử chuyến đi - Hoàn thành.svg" alt="Lịch sử - Hoàn thành" />
           </div>
@@ -264,19 +254,26 @@
             <img src="ScreenFlow/DiKeVoi/Lịch sử chuyến đi - Đã hủy.svg" alt="Lịch sử - Đã hủy" />
           </div>
           <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Report.svg" alt="Báo cáo" />
+          </div>
+          <div class="screenshot-item">
             <img src="ScreenFlow/DiKeVoi/Report detail.svg" alt="Chi tiết báo cáo" />
+          </div>
+          <div class="screenshot-item">
+            <img src="ScreenFlow/DiKeVoi/Report success.svg" alt="Báo cáo thành công" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- DOWNLOAD -->
   <section class="download" id="download">
     <div class="container download__inner">
       <div class="download__content">
         <p class="eyebrow eyebrow--light">Bắt đầu ngay hôm nay</p>
-        <h2>Tải ứng dụng DiKeVoi!</h2>
-        <p>Sắp có mặt trên iOS và Android. Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng — hoàn toàn miễn phí cho tất cả sinh viên ĐHQG-HCM.</p>
+        <h2>Tải xuống DiKeVoi!</h2>
+        <p>Có sẵn trên iOS và Android. Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng — hoàn toàn miễn phí cho tất cả sinh viên ĐHQG-HCM.</p>
         <div class="download__buttons">
           <a href="#" class="btn btn--white">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -287,11 +284,12 @@
             Google Play
           </a>
         </div>
-        <p class="download__coming-soon">Sắp ra mắt — Cùng chờ đón nhé!</p>
+        <p class="download__coming-soon">🚀 Sắp ra mắt — hãy đón chờ!</p>
       </div>
       <div class="download__qr">
         <div class="qr-placeholder">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <!-- QR code pattern (decorative) -->
             <rect x="5" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
             <rect x="13" y="13" width="19" height="19" rx="1"/>
             <rect x="60" y="5" width="35" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="4"/>
@@ -318,25 +316,22 @@
     </div>
   </section>
 
+  <!-- TEAM -->
   <section class="team" id="team">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Đội ngũ phát triển</p>
-        <h2>Gặp gỡ Nhóm L02-4795</h2>
-        <p class="section-desc">DiKeVoi! là một dự án đầy tự hào được xây dựng bởi Nhóm L02-4795 thuộc môn học Phát triển Ứng dụng Di động tại ĐHQG-HCM, Học kỳ 252.</p>
+        <p class="eyebrow">Nhà phát triển</p>
+        <h2>Gặp gỡ đội ngũ</h2>
+        <p class="section-desc">DiKeVoi! được xây dựng bởi các thành viên của nhóm L02-4795 trong môn học Phát triển Ứng dụng trên Thiết bị di động tại Trường Đại học Bách khoa - ĐHQG-HCM, Học kỳ 252.</p>
       </div>
       <div class="team__info-cards">
         <div class="info-card">
-          <div class="info-card__icon">
-            <span class="material-symbols-outlined">developer_mode</span>
-          </div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">phone_android</span></div>
           <div class="info-card__label">Môn học</div>
-          <div class="info-card__value">Phát triển Ứng dụng Di động</div>
+          <div class="info-card__value">Phát triển Ứng dụng trên Thiết bị di động</div>
         </div>
         <div class="info-card">
-          <div class="info-card__icon">
-            <span class="material-symbols-outlined">group</span>
-          </div>
+          <div class="info-card__icon"><span class="material-symbols-outlined">group</span></div>
           <div class="info-card__label">Nhóm</div>
           <div class="info-card__value">L02-4795</div>
         </div>
@@ -354,14 +349,14 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="logo-icon">
-        </span>
-        <span class="logo-text">DiKeVoi!</span>
+        <img src="Logo.png" alt="DiKeVoi Logo" class="footer__logo" style="width: 40px; height: 40px;" />
+        <span class="logo-text">DiKeVoi</span>
       </div>
-      <p class="footer__tagline">Cùng trường, cùng đường, cùng đi!</p>
+      <p class="footer__tagline">Cùng đi. Cùng tiết kiệm.</p>
       <div class="footer__links">
         <a href="https://github.com/DiKeVoi" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="#features">Tính năng</a>
